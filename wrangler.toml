@@ -5,6 +5,7 @@ main = "@tanstack/react-start/server-entry"
 
 routes = [
   { pattern = "devlomingo.com", custom_domain = true },
+  { pattern = "www.devlomingo.com", custom_domain = true },
 ]
 
 [observability]
