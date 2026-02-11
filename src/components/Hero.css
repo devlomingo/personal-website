@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+}
+
+/* Glow effect */
+.hero__glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(34, 211, 238, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+[data-theme="light"] .hero__glow {
+  background: radial-gradient(ellipse, rgba(8, 145, 178, 0.06) 0%, transparent 70%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+}
+
+.hero__label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-6);
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.02em;
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-10);
+  max-width: 36rem;
+}
+
+@media (min-width: 640px) {
+  .hero__subtitle {
+    font-size: var(--text-xl);
+  }
+}
+
+/* CTAs */
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  min-height: 2.75rem;
+}
+
+.hero__cta--primary {
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+}
+
+.hero__cta--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.hero__cta--secondary {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.hero__cta--secondary:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text-primary);
+  background: var(--color-bg-tertiary);
+}

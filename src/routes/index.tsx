@@ -1,37 +1,25 @@
 import { createFileRoute } from '@tanstack/react-router'
-import '../App.css'
+import { useScrollReveal } from '@/hooks/useScrollReveal'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
+import Insights from '@/components/Insights'
+import Contact from '@/components/Contact'
 
-export const Route = createFileRoute('/')({ component: App })
+export const Route = createFileRoute('/')({ component: Home })
 
-function App() {
+function Home() {
+  useScrollReveal()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img
-          src="/tanstack-circle-logo.png"
-          className="App-logo"
-          alt="TanStack Logo"
-        />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="App-link"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Insights />
+      <Contact />
+    </>
   )
 }
