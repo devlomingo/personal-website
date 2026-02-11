@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "deploy": "pnpm build && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "preview:worker": "pnpm build && wrangler dev"
   },
   "dependencies": {
     "@tanstack/react-devtools": "^0.7.0",
