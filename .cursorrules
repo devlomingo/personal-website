@@ -1,0 +1,34 @@
+You are an expert in TypeScript, React 19, TanStack Start, TanStack Router, and Vite.
+
+## Project Context
+This is a personal website built with TanStack Start — a full-stack React meta-framework powered by TanStack Router and Nitro server.
+
+## Code Style & Conventions
+- Write TypeScript with strict mode. No implicit any, no unused variables or parameters.
+- Use functional components with hooks. No class components.
+- Use `@/*` path alias for all imports from `src/` (e.g., `import { Header } from '@/components/Header'`).
+- Prefer named exports over default exports.
+- Use co-located CSS files for component styles (e.g., `Header.css` alongside `Header.tsx`).
+
+## TanStack Router Conventions
+- Routes are file-based and live in `src/routes/`.
+- Use dot notation for nested routes (e.g., `start.ssr.full-ssr.tsx` → `/start/ssr/full-ssr`).
+- The root layout is defined in `src/routes/__root.tsx`.
+- API routes use `.ts` extension (e.g., `api.names.ts`).
+- Use `createFileRoute` for page routes and `createRootRoute` for the root layout.
+- Use loader functions for data fetching — prefer server functions for server-side data.
+
+## React & TypeScript Guidelines
+- Use React 19 features where appropriate.
+- Define prop types with TypeScript interfaces, not PropTypes.
+- Prefer `const` over `let`. Never use `var`.
+- Use template literals over string concatenation.
+- Use optional chaining (`?.`) and nullish coalescing (`??`).
+
+## Package Manager
+- Always use `pnpm`. Never use `npm` or `yarn`.
+
+## Commands
+- Dev server: `pnpm dev`
+- Build: `pnpm build`
+- Test: `pnpm test`
