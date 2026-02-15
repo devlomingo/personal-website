@@ -17,14 +17,14 @@ export const Route = createRootRoute({
       {
         name: 'description',
         content:
-          'Senior backend engineer specializing in SaaS architecture and scalable systems. Leveraging AI to build reliable software that scales.',
+          'Senior Backend Engineer specializing in scalable, high-performance backend systems for high-traffic e-commerce platforms. Expert in API design, database optimization, and SaaS infrastructure.',
       },
       { name: 'theme-color', content: '#09090b' },
       { property: 'og:title', content: 'Mohammed Alabsi — Senior Backend Engineer' },
       {
         property: 'og:description',
         content:
-          'Senior backend engineer specializing in SaaS architecture and scalable systems. Leveraging AI to build reliable software.',
+          'Senior Backend Engineer specializing in scalable, high-performance backend systems for high-traffic e-commerce platforms. Expert in API design, database optimization, and SaaS infrastructure.',
       },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary' },

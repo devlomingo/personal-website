@@ -16,9 +16,9 @@ export default function Hero() {
           Mohammed Alabsi
         </h1>
         <p className="hero__subtitle" data-reveal style={{ '--reveal-delay': '0.2s' } as React.CSSProperties}>
-          I architect scalable SaaS systems and reliable backend solutions.
+          I build scalable, high-performance backend systems for high-traffic platforms.
           <br />
-          Building software that handles what comes next.
+          Architecting e-commerce infrastructure that drives business growth.
         </p>
         <div className="hero__actions" data-reveal style={{ '--reveal-delay': '0.3s' } as React.CSSProperties}>
           <a

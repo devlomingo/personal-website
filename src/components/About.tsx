@@ -11,15 +11,16 @@ export default function About() {
         <div className="about__grid">
           <div className="about__text" data-reveal>
             <p>
-              I'm a senior backend engineer with a focus on SaaS architecture and scalable distributed
-              systems. I leverage AI tools to accelerate development and ship faster. I believe the
-              best engineering is invisible — users experience reliability, speed, and simplicity
-              without ever seeing the complexity underneath.
+              I'm a Senior Backend Engineer based in Makkah, Saudi Arabia, with extensive experience
+              building scalable, secure, and high-performance backend systems for high-traffic
+              e-commerce platforms. At Salla, I've architected core services handling millions of
+              requests — from account systems and review platforms to landing page builders.
             </p>
             <p>
-              My approach combines deep technical expertise with product-minded thinking. I don't
-              just build systems that work — I build systems that evolve gracefully as requirements
-              change and scale demands grow.
+              My approach combines deep backend expertise with a results-driven mindset. I don't
+              just write code — I design systems that reduce costs, improve reliability, and directly
+              impact business metrics. I'm passionate about mentoring teams, fostering engineering
+              excellence, and delivering solutions that scale.
             </p>
           </div>
 

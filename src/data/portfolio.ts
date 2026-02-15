@@ -23,107 +23,128 @@ export interface AboutHighlight {
 
 export const skills: Skill[] = [
   {
-    title: 'SaaS Architecture',
+    title: 'Backend Architecture & API Design',
     description:
-      'Designing multi-tenant systems with clean domain boundaries, event-driven patterns, and graceful scaling strategies.',
-    tags: ['Multi-tenancy', 'Domain-Driven Design', 'Event Sourcing'],
+      'Designing secure, high-performance backend systems and RESTful APIs that power millions of transactions across high-traffic e-commerce platforms.',
+    tags: ['Laravel', 'Node.js', 'REST APIs', 'System Design'],
   },
   {
-    title: 'Scalable Backend Systems',
+    title: 'Scalable Systems & Performance',
     description:
-      'Building services that handle millions of requests with predictable latency, from message queues to distributed caching.',
-    tags: ['Microservices', 'Message Queues', 'Caching'],
+      'Building infrastructure that handles massive traffic spikes with predictable latency through strategic caching, query optimization, and distributed processing.',
+    tags: ['Redis', 'Elasticsearch', 'Queue Systems', 'Database Indexing'],
   },
   {
-    title: 'AI-Enhanced Development',
+    title: 'SaaS & E-Commerce Infrastructure',
     description:
-      'Leveraging AI tools and workflows to accelerate development cycles, improve code quality, and ship production-ready features faster.',
-    tags: ['AI Tooling', 'Rapid Prototyping', 'Developer Productivity'],
+      'Engineering multi-tenant platforms with clean domain boundaries, event-driven patterns, and the resilience required for enterprise-grade e-commerce.',
+    tags: ['Multi-tenancy', 'High Availability', 'SaaS Platforms', 'E-Commerce'],
   },
   {
-    title: 'Cloud Infrastructure',
+    title: 'Cloud & DevOps',
     description:
-      'Infrastructure as code, container orchestration, and CI/CD pipelines that make deployments boring (in a good way).',
-    tags: ['AWS', 'Docker', 'Terraform', 'CI/CD'],
+      'End-to-end deployment pipelines, infrastructure management, and CI/CD automation that make releases reliable and rollbacks instant.',
+    tags: ['AWS', 'Cloudflare', 'CI/CD', 'Performance Monitoring'],
   },
   {
-    title: 'Data & APIs',
+    title: 'Technical Leadership & Quality',
     description:
-      'RESTful and GraphQL API design, database modeling, and data pipeline architecture for analytics and reporting.',
-    tags: ['PostgreSQL', 'REST', 'GraphQL', 'Redis'],
+      'Leading engineering teams with Agile methodologies, fostering code quality through testing practices, and mentoring engineers to deliver at scale.',
+    tags: ['Agile', 'Unit Testing', 'Code Review', 'Team Mentorship'],
   },
 ]
 
 export const experiences: Experience[] = [
   {
     role: 'Senior Backend Engineer',
-    company: 'SaaS Platform',
+    company: 'Salla E-Commerce Platform',
     period: '2022 — Present',
     impacts: [
-      'Architected multi-tenant platform serving 500+ enterprise customers with 99.95% uptime',
-      'Reduced API response times by 60% through strategic caching and query optimization',
-      'Led migration from monolith to microservices, cutting deployment time from hours to minutes',
+      'Architected and launched an advanced account service — reducing SMS costs, implementing fingerprint authentication, and streamlining cross-system access',
+      'Led backend development for the Reviews & Feedback system, boosting user engagement while ensuring stability under high-traffic conditions',
+      'Enabled the Landing Page Builder launch with optimized backend for high content volume, delivering speed, stability, and analytics insights',
+      'Drove performance optimization and real-time error tracking across the platform, reducing downtime and improving reliability at scale',
     ],
   },
   {
     role: 'Backend Engineer',
-    company: 'Tech Company',
-    period: '2020 — 2022',
+    company: 'Salla E-Commerce Platform',
+    period: '2021 — 2022',
     impacts: [
-      'Built real-time data processing pipeline handling 2M+ events per day',
-      'Designed and implemented authentication system supporting SSO, RBAC, and multi-factor auth',
-      'Mentored junior engineers and established backend code review standards',
+      'Improved system scalability through strategic database indexing and query optimization across core services',
+      'Implemented Redis caching and session management, significantly reducing server load and response times',
+      'Integrated Elasticsearch for advanced search capabilities serving thousands of merchants',
+      'Built robust distributed logging systems and managed background job processing at scale',
     ],
   },
   {
-    role: 'Software Engineer',
-    company: 'Startup',
-    period: '2018 — 2020',
+    role: 'Technical Support Engineer',
+    company: 'Salla E-Commerce Platform',
+    period: '2021',
     impacts: [
-      'Developed core API that powered the company\'s flagship product from 0 to 10K users',
-      'Implemented automated testing pipeline that caught 40% more bugs before production',
-      'Integrated third-party payment and notification services with fault-tolerant patterns',
+      'Resolved critical production issues using real-time debugging tools, ensuring platform stability',
+      'Bridged the gap between technical teams and non-technical stakeholders with clear, actionable communication',
+      'Integrated customer feedback directly into engineering improvements, accelerating product iteration',
+    ],
+  },
+  {
+    role: 'Freelance Software Developer',
+    company: 'Independent',
+    period: '2019 — 2021',
+    impacts: [
+      'Built scalable SaaS platforms and backend services using Laravel and Node.js for diverse clients',
+      'Deployed production systems on AWS and Cloudflare with a focus on performance and security',
+      'Translated complex business requirements into reliable technical solutions that drove client growth',
+    ],
+  },
+  {
+    role: 'Full Stack Developer',
+    company: 'General Authority of Zakat',
+    period: '2019',
+    impacts: [
+      'Developed robust web applications using CodeIgniter, delivering clean and maintainable full-stack solutions',
+      'Managed the complete development lifecycle from planning through deployment and maintenance',
     ],
   },
 ]
 
 export const insights: Insight[] = [
   {
-    title: 'The Boring Technology Thesis',
+    title: 'Architecture Over Frameworks',
     summary:
-      'The best systems are built with well-understood tools. Innovation should happen at the product layer, not the infrastructure layer.',
+      'Frameworks change. Sound architectural principles don\'t. I design systems around domain boundaries and data flow — the framework is an implementation detail.',
   },
   {
-    title: 'Observability Over Testing',
+    title: 'Performance is a Feature',
     summary:
-      'Tests tell you if code works in isolation. Observability tells you if the system works in production. Both matter, but one scales better.',
+      'Every millisecond of latency costs conversions. I treat performance as a first-class requirement, not an afterthought — from database queries to API response times.',
   },
   {
-    title: 'APIs as Products',
+    title: 'Reliability at Scale',
     summary:
-      'An API is a user interface for developers. The same UX principles — consistency, discoverability, error clarity — apply just as much.',
+      'High-traffic systems demand more than good code. They need observability, graceful degradation, and infrastructure that fails predictably when pushed to the edge.',
   },
   {
-    title: 'Premature Scaling is the Root of All Evil',
+    title: 'Ship, Measure, Iterate',
     summary:
-      'Start with a monolith. Extract services when you have clear domain boundaries, not when you have architectural anxiety.',
+      'The best backend decisions are data-driven. I instrument systems to surface real performance metrics, then optimize where the numbers say it matters most.',
   },
 ]
 
 export const aboutHighlights: AboutHighlight[] = [
   {
-    title: 'Systems Thinker',
+    title: 'Scalable Systems Architect',
     description:
-      'I see beyond individual services to the interactions, failure modes, and emergent behaviors of the whole system.',
+      'I design backend systems that handle millions of requests with predictable performance, building for the traffic of tomorrow — not just today.',
   },
   {
-    title: 'Pragmatic Engineer',
+    title: 'Performance-Driven Engineer',
     description:
-      'I optimize for delivery speed and reliability, not technical novelty. The right tool is the one that ships.',
+      'I obsess over latency, throughput, and cost efficiency — turning slow systems into fast ones through strategic optimization and deep technical insight.',
   },
   {
-    title: 'Leadership-Ready',
+    title: 'Technical Leader',
     description:
-      'I bridge the gap between technical depth and product vision, translating complex decisions into team alignment.',
+      'I bridge engineering depth with business impact, mentoring teams, driving architectural decisions, and delivering solutions that directly grow the bottom line.',
   },
 ]

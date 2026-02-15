@@ -24,8 +24,8 @@ export default function Contact() {
           <span className="contact__label">Contact</span>
           <h2 className="contact__title">Let's build something great</h2>
           <p className="contact__subtitle">
-            I'm open to senior engineering roles, technical leadership positions, and interesting
-            collaboration opportunities.
+            I'm open to senior backend engineering roles, technical leadership positions, and
+            opportunities to architect scalable systems for high-impact products.
           </p>
 
           <a href="mailto:alabsi.m.b@gmail.com" className="contact__email-btn">
